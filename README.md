@@ -6,4 +6,4 @@ A minimizer which is to reduce file size with removing new line ("\n") .
 Usage
 =====
 
-$ python minimizer.py source_path destination_file
+    $ python minimizer.py source_file destination_file

@@ -18,7 +18,6 @@ destination = options.destination[0]
 
 content = ''
 newContent = ''
-temp = ''
 
 #ext = ['js','css','html','php','txt']
 
@@ -34,11 +33,7 @@ destination = os.path.join(os.getcwd()+'/'+destination)
 file=open(destination,'w')
 
 for c in content:
-	for index in c:
-		temp = temp + index.strip()
-	newContent = newContent + temp
-	temp = ''
-	print temp
+	newContent = newContent + c.strip()
 
 print 'Starting minimizing .... '
 print '.........................'
